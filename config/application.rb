@@ -19,7 +19,7 @@ Bundler.require(*Rails.groups)
 
 module MatchNeo4j
   class Application < Rails::Application
-    
+
     config.generators do |g|
       g.orm             :neo4j
     end
