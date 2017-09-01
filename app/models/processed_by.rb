@@ -9,7 +9,7 @@ class ProcessedBy
   # If you wanted to specify something else:
   # type 'ENROLLED'
 
-  %i(_method message).each do |name|
+  %i(implemented_in message).each do |name|
     property name
     validates_presence_of name
   end

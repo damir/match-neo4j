@@ -4,7 +4,7 @@ module Definitions
     {type: 'Language', ref: :ruby, properties: {name: "Ruby"},
       ins: [
         {
-          node: [:patient_state_service, :patient_processor_service, :ta_api_service, :ta_processor_service],
+          node: [:patient_api_service, :patient_state_service, :patient_processor_service, :ta_api_service, :ta_processor_service],
           relation: {type: 'WrittenIn', properties: {version: "2.4.1"}}
         },
       ],

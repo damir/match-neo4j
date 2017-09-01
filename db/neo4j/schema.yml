@@ -18,6 +18,7 @@
 - CONSTRAINT ON ( language:Language ) ASSERT language.uuid IS UNIQUE
 - CONSTRAINT ON ( service:Service ) ASSERT service.title IS UNIQUE
 - CONSTRAINT ON ( service:Service ) ASSERT service.uuid IS UNIQUE
+- CONSTRAINT ON ( sqsqueue:SQSQueue ) ASSERT sqsqueue.uuid IS UNIQUE
 :indexes:
 - INDEX ON :Service(name)
 :versions:
@@ -26,3 +27,4 @@
 - '20170829182048'
 - '20170829204508'
 - '20170830205947'
+- '20170901152232'

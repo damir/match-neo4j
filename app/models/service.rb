@@ -8,8 +8,7 @@ class Service
     validates_presence_of name
   end
 
-  has_many :in,  :endpoints,  rel_class: :ProcessedBy
-  has_many :out, :_endpoints, rel_class: :Gets
-
-  has_one :out, :language, rel_class: :WrittenIn
+  # has_many  :in,  :endpoints,  rel_class: :ProcessedBy
+  # has_many  :out, :_endpoints, rel_class: :SendsPayload
+  # has_one   :out, :language, rel_class: :WrittenIn
 end

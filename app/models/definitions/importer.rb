@@ -3,7 +3,7 @@ module Definitions::Importer
 
   extend self
 
-  NODES = LANGUAGES + SERVICES << PATIENTS_API
+  NODES = LANGUAGES + SQS_QUEUES + SERVICES + PATIENT_API_ENDPOINTS + PATIENT_STATE_ENDPOINTS
   NODES.extend Hashie::Extensions::DeepLocate
   PROCESSED_NODES = {}
 
